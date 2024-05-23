@@ -1,0 +1,115 @@
+@charset "utf-8";
+
+/* common.css
+  header, footer서식
+*/
+
+header{
+  position: absolute;
+  width: 100%; height: 70px;
+  z-index: 1000;
+}
+header > h1{padding: 24px 0px 0px 2%;}
+
+/* 내비게이션 */
+.gnb{
+  width: 600px; margin: -20px auto;
+}
+.gnb > ul{
+  display: flex;
+  justify-content: space-around;
+}
+.gnb > ul > li > a{
+  color: var(--m_bg_color);
+  font-size: 1.2rem;
+}
+header i.fas{
+  color: var(--m_bg_color);
+  font-size: 1.6rem;
+  position: absolute;
+  top: 22px;
+  cursor: pointer;
+}
+header .fa-user{right: 4%;}
+header .fa-bell{right: 2%;}
+
+/* m_navi */
+#m_navi{
+  position: fixed;
+  right: 20px; top: 42%;
+  z-index: 1000;
+  width: 10px; height: 160px;
+}
+#m_navi > ul{position: relative;}
+#m_navi > ul > li{
+  width: 40px; height: 40px;
+  border-radius: 40px;
+  line-height: 40px;
+  transition: 0.5s;
+  background-color: rgb(42, 182, 241);
+  margin-top: 10px;
+  transform: translateX(-100%);
+  overflow: hidden;
+}
+#m_navi > ul > li:hover{width: 200px;}
+#m_navi > ul > li:hover span{
+  background-color: var(--s_color1);
+}
+/* #m_navi > ul > li:first-child{}
+#m_navi > ul > li:nth-child(2){top: 50px;}
+#m_navi > ul > li:nth-child(3){top: 100px;}
+#m_navi > ul > li:nth-child(4){top: 150px;;}
+#m_navi > ul > li:last-child{top: 200px;} */
+#m_navi > ul > li > span{
+  display: inline-block;
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  background-color: var(--s_color2);
+  color: var(--m_bg_color);
+  text-align: center; font-weight: bold;
+}
+#m_navi > ul > li > a{
+  color: var(--m_bg_color);
+  padding-left: 40px;
+  font-size: var(--f_size2);
+  line-height: 160%; /*진한 파란 동그래미 위치 움직이지 않게 하기 위함*/
+}
+
+/* main{height: 400px;} */
+
+/* 푸터서식 */
+footer{
+  background-color: var(--f_color1);
+  padding: 40px 0;
+  height: 100px;
+}
+.f_inner{
+  width: 1200px; margin: 0 auto;
+}
+footer h2{
+  float: left;
+  padding-top: 10px;
+  width: 150px; height: 60px;
+}
+.f_lnb > ul{
+  display: flex;
+  padding-top: 15px;
+}
+.f_lnb{float: left;}
+.f_lnb a{
+  color: #bababa;
+  padding: 0px 20px;
+  border-right: 1px solid #ccc;
+}
+.f_lnb li:nth-child(2) a{color: var(--m_bg_color);}
+.f_lnb li:last-child a{border: none;}
+address{
+  clear: left; 
+  padding-left: 170px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color:#bababa;
+}
+address dt, address dd{
+  display: inline-block;
+}

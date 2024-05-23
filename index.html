@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>캐스퍼 온라인 사이트</title>
+  <!-- 초기화 -->
+  <link rel="stylesheet" href="./css/reset.css" type="text/css">
+  <!-- 기본서식 -->
+  <link rel="stylesheet" href="./css/base.css" type="text/css">
+  <!-- 공통서식 -->
+  <link rel="stylesheet" href="./css/common.css" type="text/css">
+  <!-- 메인서식 -->
+  <link rel="stylesheet" href="./css/main.css" type="text/css">
+  <!-- 스와이퍼 -->
+  <link rel="stylesheet" href="./css/swiper.css" type="text/css">
+  <!-- 아이콘폰트 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+  <!-- 상단헤더영역 -->
+  <header>
+    <h1>
+      <a href="index.html" title="메인페이지로 바로가기">
+        <img src="./images/logo-casper-white.png" alt="캐스퍼로고">
+      </a>
+    </h1>
+    <!-- 내비게이션 -->
+    <nav class="gnb">
+      <ul>
+        <li><a href="#" title="소개">소개</a></li>
+        <li><a href="#" title="체험">체험</a></li>
+        <li><a href="#" title="이벤트">이벤트</a></li>
+        <li><a href="#" title="구매">구매</a></li>
+        <li><a href="#" title="고객지원">고객지원</a></li>
+      </ul>
+    </nav>
+    <a href="login.html" title="로그인"><i class="fas fa-user"></i></a>
+    <i class="fas fa-bell"></i>
+  </header>
+
+  <!-- 원형내비게이션 -->
+  <nav id="m_navi">
+    <ul>
+      <li><span>1</span><a href="#" title="소개">소개</a></li>
+      <li><span>2</span><a href="#" title="체험">체험</a></li>
+      <li><span>3</span><a href="#" title="이벤트">이벤트</a></li>
+      <li><span>4</span><a href="#" title="구매">구매</a></li>
+      <li><span>5</span><a href="#" title="고객지원">고객지원</a></li>
+    </ul>
+  </nav>
+
+  <!-- 메인콘텐츠영역 -->
+  <main>
+    <section id="intro_m">
+      <article>
+        <h2 class="sec_title">CASPER</h2>
+        <p>오직 캐스퍼 온라인에서만 구매하실 수 있습니다.</p>
+        <a href="#" title="나만의 캐스퍼 만들기">나만의 캐스퍼 만들기</a>
+        <a href="#" title="구매 혜택보기">구매 혜택보기</a>
+        <a href="#" title="자세히 보기">자세히 보기</a>
+      </article>
+      <video autoplay muted loop>
+        <source src="./images/casper_te_18.webm">
+      </video>
+      <a href="#" title="아래로 이동" class="next_page">&nbsp;</a>
+    </section>
+
+    <!-- top3 콘텐츠 영역 -->
+    <section id="top3">
+      <h2>가장 많이 찾는 캐스퍼</h2>
+      <p>지금 가장 인기 있는 조합을 확인해 보세요.</p>
+      <!-- swiper slide -->
+      <div class="swiper top3">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <span class="rank">1위</span>
+            <h3 class="top3_title">가솔린 1.0터보 인스퍼레이션</h3>
+            <img src="./images/color_khaki.02b812c.png" alt="카키">
+            <ul class="detail">
+              <li><span class="outer_color kaki">카키</span>외장색상<br> 톰보이 카키</li>
+              <li><span class="inner_color black">블랙</span>내장색상<br> 블랙</li>
+              <li>선택품목<br> 캐스퍼 액티브 11</li>
+              <li><em class="price">19,600,000</em>원</li>
+            </ul>
+            <input type="button" value="견적내기 &gt;" class="btn b_btn">
+          </div>
+          <div class="swiper-slide">2</div>
+          <div class="swiper-slide">3</div>
+        </div>
+        <!-- 콘트롤버튼 - pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- 좌우버튼 -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+  </main>
+
+  
+
+  <!-- 푸터영역 -->
+  <footer>
+    <div class="f_inner">
+      <h2>
+        <a href="index.html" title="메인페이지로 바로가기">
+          <img src="./images/logo-hyundai.a9ebdc6.png" alt="하단로고">
+        </a>
+      </h2>
+      <nav class="f_lnb">
+        <ul>
+          <li><a href="#" title="이용약관">이용약관</a></li>
+          <li><a href="#" title="개인정보처리방침">개인정보처리방침</a></li>
+          <li><a href="#" title="저작권안내">저작권안내</a></li>
+          <li><a href="#" title="공인인증서안내">공인인증서안내</a></li>
+          <li><a href="#" title="현대자동차 홈페이지">현대자동차 홈페이지</a></li>
+        </ul>
+      </nav>
+      <address>
+        <dl>
+          <dt>사업자등록번호 : </dt>
+          <dd>101-00-00000</dd>
+          <dt>통신판매업신고번호 : </dt>
+          <dd>2022-012345</dd>
+          <dt>대표이사 : </dt>
+          <dd>장재훈</dd>
+          <dt>주소 : </dt>
+          <dd>서울시 서초구 헌릉로</dd>
+          <dt>호스팅 서비스 제공 : </dt>
+          <dd>현대오토에머(주)</dd>
+        </dl>
+        COPYRIGHT ⓒ HYUNDAI MOTOR COMPANY, ALL RIGHTS RESERVED.
+      </address>
+    </div>
+  </footer>
+
+  
+  <!-- 제이쿼리 라이브러리 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <!-- 쿠키파일 --> 
+  <script src="./script/jquery.cookie.js" type="text/javascript"></script>
+  <!-- 쿠키는 라이브 서버에서만 작동을 한다. 그냥 문서열기로 하면 작동 안됨..ㅋ -->
+  <!-- 메인 스크립트 -->
+  <script src="./script/main.js"></script>
+  <!-- 스와이퍼 슬라이드 -->
+  <script src="./script/swiper.js"></script>
+  <script>
+    // 스와이퍼
+    var swiper = new Swiper('.top3', {
+      autoplay:{
+        delay:3000,
+        disableOnInteration:false,
+      },
+      loop:true,
+      navigation: {
+        nextEl: ".top3 .swiper-button-next",
+        prevEl: ".top3 .swiper-button-prev",
+      },
+      pagination:{
+        el: '.swiper-pagination',
+        clickable:true,
+      }
+    });
+
+    $(document).ready(function(){
+      // 변수
+      let modal = `
+        <!-- 모달창 -->
+        <div class="modal">
+          <div class="m_inner">
+            <a href="#" title="캐스퍼 광고 모달창">
+              <img src="./images/main_Popup_PC_450x600.jpg" alt="">
+            </a>
+            <input type="checkbox" id="ch">
+            <label for="ch">일주일간 열지 않음</label>
+            <input type="button" value="닫기" id="c_btn">
+          </div>
+        </div>
+      `
+
+      // body 태그 안쪽 맨 뒤에 modal내용을 출력한다.
+      $('body').append(modal);
+
+      let ch = $('#ch'); //체크박스 변수
+
+      // 현재 사용자의 브라우저에서 쿠키정보가 있다면 모달창이 안나오게 해야함.
+      if($.cookie('popup')=='none'){ //쿠키정보가 있다면 'popup'은 임의로 써준것
+        $('.modal').hide(); //모달창을 숨겨라
+      }
+
+      //체크막스를 체크하고 '닫기'버튼을 누르면 모달창이 닫힘
+      function close_popup(){
+        if(ch.is(':checked')){ // is메서드 뒤에 들어올 속성이 있는지 없는지 말해주는 메서드, 체크가 된 경우라면
+          //쿠키정보가 저장되어야 함.
+          $.cookie('popup','none', {expires:7, path:'/'}); //쿠키 정보를 'popup'은 none값으로 생성하고 1(하루)동안 '/'루트에다가 저장한다.
+          $('.modal').hide();
+        }else{ //체크박스에 체크하지 않았다면
+          //쿠키정볼르 생성하지 않고 그냥 닫기
+          $('.modal').hide();
+        }
+      }
+
+      //닫기 버튼 클릭시 close_popup함수를 호출하여 실행
+      $('#c_btn').click(function(){
+        close_popup();
+        //#ch도 추가시켜주면 '오늘 하루 열지 않음'만 클릭해도 모달창이 하루동안 숨겨짐
+      });
+
+    });
+  </script>
+</body>
+</html>
